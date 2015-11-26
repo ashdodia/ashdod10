@@ -1,0 +1,15 @@
+<ion-view view-title="jBackApp - Content">
+  <ion-content>
+
+    <div class="item item-avatar">
+      <h2>{{item.title}}</h2>
+      <p>{{item.published_date}}</p>
+    </div>
+
+    <div class="item item-body">
+      <img class="full-image" ng-src="{{item.images.image_fulltext}}">
+      <div ng-bind-html="item.content"></div>
+    </div>
+
+  </ion-content>
+</ion-view>

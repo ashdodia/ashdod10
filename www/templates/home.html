@@ -1,0 +1,37 @@
+﻿<ion-view view-title="jBackApp - Sections">
+    <ion-content>
+        <div class="item item-divider">
+            <h1 class="title">חדשות</h1>
+        </div>
+        <div ng-repeat="item in items.news" class="list card" ng-click="goToContent(item.id)">
+            <div class="item item-body">
+                <div class="item item-thumbnail-right">
+                    <img ng-src="{{item.images.imageXSmall}}">
+                    <p ng-bind-html="item.title"></p>
+                </div>
+            </div>
+        </div>
+        <div class="item item-divider">
+            <h1 class="title">ספורט</h1>
+        </div>
+        <div ng-repeat="item in items.sport" class="list card" ng-click="goToContent(item.id)">
+            <div class="item item-body">
+                <div class="item item-thumbnail-right">
+                    <img ng-src="{{item.images.imageXSmall}}">
+                    <p ng-bind-html="item.title"></p>
+                </div>
+            </div>
+        </div>
+        <div class="item item-divider">
+            <h1 class="title">חינוך</h1>
+        </div>
+        <div ng-repeat="item in items.culture" class="list card" ng-click="goToContent(item.id)">
+            <div class="item item-body">
+                <div class="item item-thumbnail-right">
+                    <img ng-src="{{item.images.imageXSmall}}">
+                    <p ng-bind-html="item.title"></p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
